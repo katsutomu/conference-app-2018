@@ -1,1 +1,17 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven { url "https://mvnrepository.com" }
+    }
+    resolutionStrategy {
+        eachPlugin {
+            switch (requested.id.id) {
+                case ~/org\.jetbrains\.kotlin\..*/:
+                    useVersion("${kotlinVersion}")
+                    break
+            }
+        }
+    }
+}
+
 include ':app', ':common', ':common-jvm'
