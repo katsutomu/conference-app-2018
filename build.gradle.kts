@@ -3,8 +3,6 @@ import org.gradle.kotlin.dsl.extra
 import org.gradle.kotlin.dsl.maven
 import org.gradle.kotlin.dsl.repositories
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-
 buildscript {
     val kotlinVersion by extra { "1.2.10" }
 

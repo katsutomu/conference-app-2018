@@ -5,11 +5,12 @@ pluginManagement {
     }
     resolutionStrategy {
         eachPlugin {
-            switch (requested.id.id) {
-                case ~/org\.jetbrains\.kotlin\..*/:
-                    useVersion("${kotlinVersion}")
-                    break
-            }
+
+//            switch (requested.id.id) {
+//                case ~/org\.jetbrains\.kotlin\..*/:
+//                    useVersion("${kotlinVersion}")
+//                    break
+//            }
         }
     }
 }
